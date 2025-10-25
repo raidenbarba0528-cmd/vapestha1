@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VAPEMASTHA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="logo">
+      <img src="VAPEMASTA.jpg" alt="VAPEMASTA Logo">
+      <h1>VAPEMASTHA</h1>
+    </div>
+    <ul>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#drinks-food">Drinks & Food</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Get In Touch</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HOME SECTION ===== -->
+  <section id="home">
+    <video autoplay muted loop playsinline id="bg-video">
+      <source src="vape model.mp4" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+    <div class="home-content">
+      <h2>Premium Quality Flavors and Juices</h2>
+      <p>From our Lungs to your Heart</p>
+      <a href="#products" class="btn-glow">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section id="products" class="fade-section">
+    <h3>Our Vape Products</h3>
+    <div class="product-container">
+
+      <div class="product-card">
+        <img src="black-elite-6.png" alt="V1 Vape Pods">
+        <h4>V1 Vape Pods</h4>
+        <p>Smooth and flavorful vape experience.</p>
+        <div class="price">₱400</div>
+      </div>
+
+      <div class="product-card">
+        <img src="V2 BLCK BATTERY.png" alt="V2 BLACK ELITE BATTERY">
+        <h4>V2 BLACK ELITE BATTERY</h4>
+        <p>Every puff is a delight.</p>
+        <div class="price">₱300</div>
+      </div>
+
+      <div class="product-card">
+        <img src="V2 JUICE.jpg" alt="V2 JUICE">
+        <h4>V2 JUICE</h4>
+        <p>Delightful and rich in flavor.</p>
+        <div class="price">₱400</div>
+      </div>
+
+      <div class="product-card">
+        <img src="BLCK V3 CARTS.png" alt="BLCK V3 CARTS">
+        <h4>BLCK V3 CARTS</h4>
+        <p>Pure satisfaction in every puff.</p>
+        <div class="price">₱1,500</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DRINKS & FOOD SECTION ===== -->
+  <section id="drinks-food" class="fade-section gradient-bg">
+    <h3>Drinks & Food</h3>
+    <div class="product-container">
+
+      <div class="product-card">
+        <img src="coffee.jpg" alt="Espresso Vape Latte">
+        <h4>Espresso Vape Latte</h4>
+        <p>Perfect blend of caffeine and chill — sip and puff in style.</p>
+        <div class="price">₱150</div>
+      </div>
+
+      <div class="product-card">
+        <img src="snack.jpg" alt="Vape Snack Bites">
+        <h4>Vape Snack Bites</h4>
+        <p>Crunchy and flavorful snacks made for your vape breaks.</p>
+        <div class="price">₱120</div>
+      </div>
+
+      <div class="product-card">
+        <img src="juice-drink.jpg" alt="Cool Cloud Juice">
+        <h4>Cool Cloud Juice</h4>
+        <p>Refreshing drink that pairs perfectly with your favorite pods.</p>
+        <div class="price">₱100</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="fade-section">
+    <h3>About Us</h3>
+    <div class="about-container">
+      <img src="VAPEMASTA.jpg" alt="VAPEMASTA Logo">
+      <p>
+        At <strong>VAPEMASTHA</strong>, we take pride in providing only the finest, high-quality vape products.
+        Our mission is to help smokers switch to a cleaner, more satisfying experience — without sacrificing flavor.
+        Each product we offer is crafted with care, tested for quality, and made to elevate your vaping journey.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="fade-section">
+    <h3>Get in Touch</h3>
+    <div class="contact-info">
+      <p><strong>📧 Gmail:</strong> <a href="mailto:vapemastha@gmail.com">vapemastha@gmail.com</a></p>
+      <p><strong>📞 Contact Number:</strong> <a href="tel:09123456789">0912-345-6789</a></p>
+      <p><strong>📍 Address:</strong> Purok 5, Barangay San Isidro, City of Calamba, Laguna</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 <span>VAPEMASTHA</span>. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in on scroll
+    const fadeSections = document.querySelectorAll(".fade-section");
+    window.addEventListener("scroll", () => {
+      fadeSections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add("visible");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
